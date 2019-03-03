@@ -60,6 +60,8 @@ extension ScorePartwiseView {
                 drawRest16th(context: context)
             case ._32nd?:
                 drawRest32nd(context: context)
+            case ._64th?:
+                drawRest64th(context: context)
             default:
                 print("")
             }
@@ -677,4 +679,206 @@ extension ScorePartwiseView {
 
         context.restoreGState()
     }
+
+    fileprivate func drawRest64th(context: CGContext) {
+
+        context.saveGState()
+        context.translateBy(x: 0.0, y: -35.0)
+
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: 8.93, y: 0.56))
+        path.addCurve(to: CGPoint(x: 6.96, y: 2.28),
+                      controlPoint1: CGPoint(x: 8, y: 0.74),
+                      controlPoint2: CGPoint(x: 7.28, y: 1.39))
+        path.addCurve(to: CGPoint(x: 6.88, y: 3.04),
+                      controlPoint1: CGPoint(x: 6.88, y: 2.57),
+                      controlPoint2: CGPoint(x: 6.88, y: 2.64))
+        path.addCurve(to: CGPoint(x: 6.96, y: 3.79),
+                      controlPoint1: CGPoint(x: 6.88, y: 3.43),
+                      controlPoint2: CGPoint(x: 6.88, y: 3.58))
+        path.addCurve(to: CGPoint(x: 8.5, y: 5.55),
+                      controlPoint1: CGPoint(x: 7.21, y: 4.58),
+                      controlPoint2: CGPoint(x: 7.71, y: 5.19))
+        path.addCurve(to: CGPoint(x: 10.08, y: 5.87),
+                      controlPoint1: CGPoint(x: 9.07, y: 5.83),
+                      controlPoint2: CGPoint(x: 9.29, y: 5.87))
+        path.addCurve(to: CGPoint(x: 11.26, y: 5.8),
+                      controlPoint1: CGPoint(x: 10.62, y: 5.87),
+                      controlPoint2: CGPoint(x: 10.83, y: 5.87))
+        path.addCurve(to: CGPoint(x: 13.23, y: 5.26),
+                      controlPoint1: CGPoint(x: 11.83, y: 5.69),
+                      controlPoint2: CGPoint(x: 12.62, y: 5.48))
+        path.addLine(to: CGPoint(x: 13.63, y: 5.12))
+        path.addLine(to: CGPoint(x: 13.59, y: 5.26))
+        path.addCurve(to: CGPoint(x: 12.98, y: 8.02),
+                      controlPoint1: CGPoint(x: 13.56, y: 5.33),
+                      controlPoint2: CGPoint(x: 13.3, y: 6.59))
+        path.addCurve(to: CGPoint(x: 12.19, y: 11),
+                      controlPoint1: CGPoint(x: 12.41, y: 10.53),
+                      controlPoint2: CGPoint(x: 12.37, y: 10.68))
+        path.addCurve(to: CGPoint(x: 10.83, y: 12.87),
+                      controlPoint1: CGPoint(x: 11.8, y: 11.82),
+                      controlPoint2: CGPoint(x: 11.23, y: 12.61))
+        path.addCurve(to: CGPoint(x: 10.19, y: 12.9),
+                      controlPoint1: CGPoint(x: 10.62, y: 13.01),
+                      controlPoint2: CGPoint(x: 10.43, y: 13.01))
+        path.addCurve(to: CGPoint(x: 9.54, y: 11.57),
+                      controlPoint1: CGPoint(x: 9.87, y: 12.72),
+                      controlPoint2: CGPoint(x: 9.75, y: 12.54))
+        path.addCurve(to: CGPoint(x: 8.93, y: 10.17),
+                      controlPoint1: CGPoint(x: 9.36, y: 10.85),
+                      controlPoint2: CGPoint(x: 9.22, y: 10.46))
+        path.addCurve(to: CGPoint(x: 5.88, y: 9.89),
+                      controlPoint1: CGPoint(x: 8.18, y: 9.35),
+                      controlPoint2: CGPoint(x: 6.88, y: 9.24))
+        path.addCurve(to: CGPoint(x: 4.85, y: 11.25),
+                      controlPoint1: CGPoint(x: 5.41, y: 10.21),
+                      controlPoint2: CGPoint(x: 5.06, y: 10.71))
+        path.addCurve(to: CGPoint(x: 4.77, y: 12),
+                      controlPoint1: CGPoint(x: 4.77, y: 11.54),
+                      controlPoint2: CGPoint(x: 4.77, y: 11.61))
+        path.addCurve(to: CGPoint(x: 5.06, y: 13.26),
+                      controlPoint1: CGPoint(x: 4.77, y: 12.54),
+                      controlPoint2: CGPoint(x: 4.8, y: 12.83))
+        path.addCurve(to: CGPoint(x: 7.03, y: 14.76),
+                      controlPoint1: CGPoint(x: 5.41, y: 13.98),
+                      controlPoint2: CGPoint(x: 6.17, y: 14.55))
+        path.addCurve(to: CGPoint(x: 9.11, y: 14.76),
+                      controlPoint1: CGPoint(x: 7.42, y: 14.88),
+                      controlPoint2: CGPoint(x: 8.43, y: 14.88))
+        path.addCurve(to: CGPoint(x: 11.05, y: 14.26),
+                      controlPoint1: CGPoint(x: 9.68, y: 14.66),
+                      controlPoint2: CGPoint(x: 10.36, y: 14.48))
+        path.addCurve(to: CGPoint(x: 11.62, y: 14.08),
+                      controlPoint1: CGPoint(x: 11.37, y: 14.16),
+                      controlPoint2: CGPoint(x: 11.59, y: 14.08))
+        path.addCurve(to: CGPoint(x: 10.33, y: 19.68),
+                      controlPoint1: CGPoint(x: 11.62, y: 14.12),
+                      controlPoint2: CGPoint(x: 10.4, y: 19.5))
+        path.addCurve(to: CGPoint(x: 9.11, y: 21.51),
+                      controlPoint1: CGPoint(x: 10.11, y: 20.14),
+                      controlPoint2: CGPoint(x: 9.54, y: 21.04))
+        path.addCurve(to: CGPoint(x: 8.04, y: 21.87),
+                      controlPoint1: CGPoint(x: 8.64, y: 21.94),
+                      controlPoint2: CGPoint(x: 8.43, y: 22.01))
+        path.addCurve(to: CGPoint(x: 7.39, y: 20.54),
+                      controlPoint1: CGPoint(x: 7.71, y: 21.69),
+                      controlPoint2: CGPoint(x: 7.6, y: 21.51))
+        path.addCurve(to: CGPoint(x: 6.78, y: 19.14),
+                      controlPoint1: CGPoint(x: 7.21, y: 19.82),
+                      controlPoint2: CGPoint(x: 7.07, y: 19.43))
+        path.addCurve(to: CGPoint(x: 3.73, y: 18.86),
+                      controlPoint1: CGPoint(x: 6.03, y: 18.31),
+                      controlPoint2: CGPoint(x: 4.73, y: 18.21))
+        path.addCurve(to: CGPoint(x: 2.69, y: 20.22),
+                      controlPoint1: CGPoint(x: 3.26, y: 19.18),
+                      controlPoint2: CGPoint(x: 2.9, y: 19.68))
+        path.addCurve(to: CGPoint(x: 2.62, y: 20.97),
+                      controlPoint1: CGPoint(x: 2.62, y: 20.5),
+                      controlPoint2: CGPoint(x: 2.62, y: 20.58))
+        path.addCurve(to: CGPoint(x: 2.9, y: 22.22),
+                      controlPoint1: CGPoint(x: 2.62, y: 21.51),
+                      controlPoint2: CGPoint(x: 2.65, y: 21.8))
+        path.addCurve(to: CGPoint(x: 4.88, y: 23.73),
+                      controlPoint1: CGPoint(x: 3.26, y: 22.94),
+                      controlPoint2: CGPoint(x: 4.02, y: 23.52))
+        path.addCurve(to: CGPoint(x: 9.11, y: 23.19),
+                      controlPoint1: CGPoint(x: 5.81, y: 23.98),
+                      controlPoint2: CGPoint(x: 7.35, y: 23.77))
+        path.addCurve(to: CGPoint(x: 9.61, y: 23.01),
+                      controlPoint1: CGPoint(x: 9.36, y: 23.09),
+                      controlPoint2: CGPoint(x: 9.61, y: 23.01))
+        path.addCurve(to: CGPoint(x: 9, y: 25.7),
+                      controlPoint1: CGPoint(x: 9.61, y: 23.05),
+                      controlPoint2: CGPoint(x: 9.32, y: 24.23))
+        path.addCurve(to: CGPoint(x: 8.25, y: 28.71),
+                      controlPoint1: CGPoint(x: 8.46, y: 28.21),
+                      controlPoint2: CGPoint(x: 8.43, y: 28.4))
+        path.addCurve(to: CGPoint(x: 6.88, y: 30.58),
+                      controlPoint1: CGPoint(x: 7.96, y: 29.33),
+                      controlPoint2: CGPoint(x: 7.32, y: 30.19))
+        path.addCurve(to: CGPoint(x: 5.92, y: 30.83),
+                      controlPoint1: CGPoint(x: 6.52, y: 30.91),
+                      controlPoint2: CGPoint(x: 6.28, y: 30.98))
+        path.addCurve(to: CGPoint(x: 5.27, y: 29.51),
+                      controlPoint1: CGPoint(x: 5.6, y: 30.65),
+                      controlPoint2: CGPoint(x: 5.48, y: 30.47))
+        path.addCurve(to: CGPoint(x: 4.66, y: 28.11),
+                      controlPoint1: CGPoint(x: 5.09, y: 28.79),
+                      controlPoint2: CGPoint(x: 4.95, y: 28.4))
+        path.addCurve(to: CGPoint(x: 1.61, y: 27.82),
+                      controlPoint1: CGPoint(x: 3.91, y: 27.28),
+                      controlPoint2: CGPoint(x: 2.61, y: 27.17))
+        path.addCurve(to: CGPoint(x: 0.58, y: 29.18),
+                      controlPoint1: CGPoint(x: 1.15, y: 28.14),
+                      controlPoint2: CGPoint(x: 0.79, y: 28.64))
+        path.addCurve(to: CGPoint(x: 0.5, y: 29.94),
+                      controlPoint1: CGPoint(x: 0.5, y: 29.47),
+                      controlPoint2: CGPoint(x: 0.5, y: 29.54))
+        path.addCurve(to: CGPoint(x: 0.79, y: 31.19),
+                      controlPoint1: CGPoint(x: 0.5, y: 30.47),
+                      controlPoint2: CGPoint(x: 0.53, y: 30.76))
+        path.addCurve(to: CGPoint(x: 2.76, y: 32.7),
+                      controlPoint1: CGPoint(x: 1.15, y: 31.91),
+                      controlPoint2: CGPoint(x: 1.9, y: 32.48))
+        path.addCurve(to: CGPoint(x: 7.24, y: 32.09),
+                      controlPoint1: CGPoint(x: 3.69, y: 32.95),
+                      controlPoint2: CGPoint(x: 5.48, y: 32.7))
+        path.addCurve(to: CGPoint(x: 7.6, y: 31.98),
+                      controlPoint1: CGPoint(x: 7.46, y: 32.02),
+                      controlPoint2: CGPoint(x: 7.6, y: 31.98))
+        path.addCurve(to: CGPoint(x: 4.99, y: 43.63),
+                      controlPoint1: CGPoint(x: 7.6, y: 32.02),
+                      controlPoint2: CGPoint(x: 5.09, y: 43.28))
+        path.addCurve(to: CGPoint(x: 5.16, y: 43.82),
+                      controlPoint1: CGPoint(x: 4.99, y: 43.71),
+                      controlPoint2: CGPoint(x: 5.02, y: 43.75))
+        path.addCurve(to: CGPoint(x: 5.99, y: 44.07),
+                      controlPoint1: CGPoint(x: 5.38, y: 43.96),
+                      controlPoint2: CGPoint(x: 5.74, y: 44.07))
+        path.addCurve(to: CGPoint(x: 6.81, y: 43.82),
+                      controlPoint1: CGPoint(x: 6.24, y: 44.07),
+                      controlPoint2: CGPoint(x: 6.59, y: 43.96))
+        path.addCurve(to: CGPoint(x: 7.03, y: 43.53),
+                      controlPoint1: CGPoint(x: 6.96, y: 43.75),
+                      controlPoint2: CGPoint(x: 7, y: 43.71))
+        path.addCurve(to: CGPoint(x: 11.26, y: 22.55),
+                      controlPoint1: CGPoint(x: 7.03, y: 43.42),
+                      controlPoint2: CGPoint(x: 8.93, y: 33.99))
+        path.addCurve(to: CGPoint(x: 15.38, y: 1.67),
+                      controlPoint1: CGPoint(x: 14.96, y: 4.11),
+                      controlPoint2: CGPoint(x: 15.42, y: 1.75))
+        path.addCurve(to: CGPoint(x: 14.92, y: 1.43),
+                      controlPoint1: CGPoint(x: 15.28, y: 1.5),
+                      controlPoint2: CGPoint(x: 15.14, y: 1.43))
+        path.addCurve(to: CGPoint(x: 14.2, y: 2.11),
+                      controlPoint1: CGPoint(x: 14.6, y: 1.43),
+                      controlPoint2: CGPoint(x: 14.53, y: 1.5))
+        path.addCurve(to: CGPoint(x: 12.95, y: 3.9),
+                      controlPoint1: CGPoint(x: 13.74, y: 3),
+                      controlPoint2: CGPoint(x: 13.27, y: 3.65))
+        path.addCurve(to: CGPoint(x: 12.3, y: 3.94),
+                      controlPoint1: CGPoint(x: 12.77, y: 4.04),
+                      controlPoint2: CGPoint(x: 12.59, y: 4.04))
+        path.addCurve(to: CGPoint(x: 11.66, y: 2.61),
+                      controlPoint1: CGPoint(x: 11.98, y: 3.75),
+                      controlPoint2: CGPoint(x: 11.87, y: 3.58))
+        path.addCurve(to: CGPoint(x: 10.65, y: 0.85),
+                      controlPoint1: CGPoint(x: 11.44, y: 1.64),
+                      controlPoint2: CGPoint(x: 11.19, y: 1.21))
+        path.addCurve(to: CGPoint(x: 8.93, y: 0.56),
+                      controlPoint1: CGPoint(x: 10.15, y: 0.53),
+                      controlPoint2: CGPoint(x: 9.51, y: 0.42))
+        path.close()
+        path.usesEvenOddFillRule = true
+        UIColor.black.setFill()
+        path.fill()
+        UIColor.black.setStroke()
+        path.lineWidth = 0.5
+        path.lineJoinStyle = .round
+        path.stroke()
+
+        context.restoreGState()
+    }
 }
+
